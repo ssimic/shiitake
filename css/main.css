@@ -1,0 +1,21 @@
+.id_btn, .pass_btn{
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#games{
+    overflow: auto;
+}
+
+#games > a{
+    margin-right: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+#pass{
+    width: 600px;
+    height: 700px;
+    overflow: auto;
+    margin: 0 auto;
+}

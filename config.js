@@ -29,19 +29,19 @@ var pass = new Array();
 // 記述例
 // pass.push(["上で設定したgameID", "ログイン時のIDなど", "パスワード", "アイコンの名前"]);
 
-pass.push(["s-garake", "id", "pass", "pass.png"]);
-pass.push(["s-garake", "id", "pass", "m-android.png"]);
+pass.push(["s-garake", "id", "pass", "pass.png", ""]);
+pass.push(["s-garake", "id", "pass", "m-android.png", ""]);
 
-pass.push(["s-sumaho", "id", "pass", "m-android.png"]);
+pass.push(["s-sumaho", "id", "pass", "m-android.png", ""]);
 
 
-pass.push(["m-ameba", "mon", "pass_mons", "m-android.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-android.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-android.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-android.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-android.png"]);
-pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png"]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-android.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-android.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-android.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-android.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-android.png", ""]);
+pass.push(["m-ameba", "mon", "pass_mons", "m-ameba.png", ""]);

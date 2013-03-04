@@ -18,7 +18,8 @@ $(function(){
         gameHash[pass[p][0]]["pass"].push({
             id: pass[p][1], 
             pass: pass[p][2], 
-            icon: pass[p][3]
+            icon: pass[p][3],
+            url: pass[p][4]
         });
     }
     
@@ -36,16 +37,22 @@ $(function(){
         for(var i in gameHash[gameID]["pass"]){
 //            console.log(gameHash[gameID]["pass"][i]);
             passSel.append('<tr>' + 
-                '<td><img class="thumbnail" src="icon/'+gameHash[gameID]["pass"][i]["icon"]+'" alt="'+gameHash[gameID]["pass"][i]["icon"]+'"></td>'+
+                '<td><a href="'+ gameHash[gameID]["pass"][i]["url"]+'" target="_brank">'+
+                    '<img class="thumbnail" src="icon/'+gameHash[gameID]["pass"][i]["icon"]+'" alt="'+gameHash[gameID]["pass"][i]["icon"]+'">'+
+                '</a></td>'+
                 '<td>'+
-                '<div class="control-group">' +
-                '<button class="id_btn btn btn-small btn-primary" type="button">ID</button>' +
-                '<input type="text" value="'+gameHash[gameID]["pass"][i]["id"]+'"/>' +
-                '</div>' +
-                '<div class="control-group">' +
-                '<button class="pass_btn btn btn-small btn-success" type="button">pass</button>' +
-                '<input type="text" value="'+gameHash[gameID]["pass"][i]["pass"]+'"/>' +
-                '</div>' +
+                    '<div class="control-group">' +
+                        '<button class="id_btn btn btn-small btn-primary" type="button">ID</button>' +
+                        '<input type="text" value="'+gameHash[gameID]["pass"][i]["id"]+'"/>' +
+                    '</div>' +
+                    '<div class="control-group">' +
+                        '<button class="pass_btn btn btn-small btn-success" type="button">pass</button>' +
+                        '<input type="text" value="'+gameHash[gameID]["pass"][i]["pass"]+'"/>' +
+                    '</div>' +
+                    '<div class="control-group">' +
+                        '<button class="url_btn btn btn-small btn-warning" type="button">url</button>' +
+                        '<input type="text" value="'+gameHash[gameID]["pass"][i]["url"]+'"/>' +
+                    '</div>' +
                 '</td>' +
                 '</tr>');
         }
@@ -59,7 +66,7 @@ $(function(){
         return false;
     });
     
-    $('.id_btn, .pass_btn').live("click", function(){
+    $('.id_btn, .pass_btn, .url_btn').live("click", function(){
         $(this).next().select();
         return false;
     });

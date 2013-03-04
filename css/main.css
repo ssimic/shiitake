@@ -1,4 +1,4 @@
-.id_btn, .pass_btn{
+.id_btn, .pass_btn, .url_btn{
     width: 60px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -19,3 +19,18 @@
     overflow: auto;
     margin: 0 auto;
 }
+
+#pass button{
+	height: 22px;
+}
+#pass input[type="text"] {
+	height: 14px;
+}
+#pass tr{
+	height: 80px;
+}
+
+#pass .table .control-group{
+    margin-bottom: -5px;
+}
+
